@@ -30,9 +30,6 @@ const drawColors = () =>{
         greenValue[i].textContent = `G: ${paletteElement.green}`;
         blueValue[i].textContent = `B: ${paletteElement.blue}`;
         
-
-
-        console.log(paletteElement.red);
     }
     
 }
