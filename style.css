@@ -17,7 +17,7 @@ body{
 }
 body h1{
     position: fixed;
-    top: 25%;
+    top: 12%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -25,45 +25,47 @@ body h1{
 .wrapper{
     position: relative;
     width: 50%;
-    height: 50%;
+    height: 80%;
     /* border: 2px solid black;   */
 
 }
 
-.wrapper div{
+.wrapper .colorElement{
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 40%;
+    left: 50%;
     width: 15vw;
     height: 15vw;
     border-radius: 50%;
 }
 
-.wrapper div p{
+.wrapper .colorSummary{
     position: absolute;
-    top: 50%;
-    left: 40%;
+    bottom: -55%;
+    left: 50%;
     transform: translate(-50%, -50%);
+    min-width: 60px;
     font-size: 1rem;
     font-weight: bold;
+    line-height: 1.5;
 }
 .wrapper .color1{
-    left: 0px;
+    transform: translate(-150%, -50%);
     background-color: aliceblue;
-
 }
 .wrapper .color2{
-    left: 25%;
+    transform: translate(-80%, -50%);
     background-color: blueviolet;
 }
+
 .wrapper .color3{
-    left: 50%;
+    transform: translate(-10%, -50%);
     background-color: aqua;
 }
 .wrapper .color4{
-    left: 75%;
+    transform: translate(60%, -50%);
     background-color: black;
-}
+} 
 
 .wrapper button{
     position: absolute;

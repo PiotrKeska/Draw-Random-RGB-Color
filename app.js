@@ -1,7 +1,9 @@
 
 const button = document.querySelector('.draw');
 const palette = document.querySelectorAll('.colorElement');
-const colorNameRGB = document.querySelectorAll('div p');
+const redValue = document.querySelectorAll('.red');
+const greenValue = document.querySelectorAll('.green');
+const blueValue = document.querySelectorAll('.blue');
 
 const ColorCircle = function(){
     this.red = '';
@@ -23,7 +25,12 @@ const drawColors = () =>{
          `rgb(${paletteElement.red},
              ${paletteElement.green},
               ${paletteElement.blue})`;
-        colorNameRGB[i].textContent = `${paletteElement.red}, ${paletteElement.green}, ${paletteElement.blue}`;
+
+        redValue[i].textContent = `R: ${paletteElement.red}`;
+        greenValue[i].textContent = `G: ${paletteElement.green}`;
+        blueValue[i].textContent = `B: ${paletteElement.blue}`;
+        
+
 
         console.log(paletteElement.red);
     }
